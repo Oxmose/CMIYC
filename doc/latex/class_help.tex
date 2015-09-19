@@ -1,0 +1,87 @@
+\hypertarget{class_help}{\section{Help Class Reference}
+\label{class_help}\index{Help@{Help}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_help_aecdaeb53ac4c7dfef41c9bd8c341a928}{Help} ()
+\begin{DoxyCompactList}\small\item\em The constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_help_a123b4195136758782058cb78cbd0baf7}{$\sim$\-Help} ()
+\begin{DoxyCompactList}\small\item\em The destructor. \end{DoxyCompactList}\item 
+void \hyperlink{class_help_a90df3a8e177928ed7d7043a51ee5ae7e}{Display\-Help} ()
+\begin{DoxyCompactList}\small\item\em Displays help window. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_help_a343b57df159628b1e9707893b6c04655}{Read\-Help\-File} (const std\-::string \&File\-Name)
+\begin{DoxyCompactList}\small\item\em Read the help file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_help_a49d443e46d639f9f00359aee945b3ae0}{W\-I\-N\-D\-O\-W $\ast$ \hyperlink{class_help_a49d443e46d639f9f00359aee945b3ae0}{helpwin}}\label{class_help_a49d443e46d639f9f00359aee945b3ae0}
+
+\begin{DoxyCompactList}\small\item\em The W\-I\-N\-D\-O\-W the help information are displayed into. \end{DoxyCompactList}\item 
+\hypertarget{class_help_a81d13a50d91a3564b8efa65c379f5472}{std\-::vector$<$ std\-::string $>$ \hyperlink{class_help_a81d13a50d91a3564b8efa65c379f5472}{Help\-Vector}}\label{class_help_a81d13a50d91a3564b8efa65c379f5472}
+
+\begin{DoxyCompactList}\small\item\em The vector the information contained in the help file are stored into. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_help_aecdaeb53ac4c7dfef41c9bd8c341a928}{\index{Help@{Help}!Help@{Help}}
+\index{Help@{Help}!Help@{Help}}
+\subsubsection[{Help}]{\setlength{\rightskip}{0pt plus 5cm}Help\-::\-Help (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_help_aecdaeb53ac4c7dfef41c9bd8c341a928}
+
+
+The constructor. 
+
+The constructor will generate the window and read the help file to display. \hypertarget{class_help_a123b4195136758782058cb78cbd0baf7}{\index{Help@{Help}!$\sim$\-Help@{$\sim$\-Help}}
+\index{$\sim$\-Help@{$\sim$\-Help}!Help@{Help}}
+\subsubsection[{$\sim$\-Help}]{\setlength{\rightskip}{0pt plus 5cm}Help\-::$\sim$\-Help (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_help_a123b4195136758782058cb78cbd0baf7}
+
+
+The destructor. 
+
+It will free the memory allocated by the constructor and remove the window. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_help_a90df3a8e177928ed7d7043a51ee5ae7e}{\index{Help@{Help}!Display\-Help@{Display\-Help}}
+\index{Display\-Help@{Display\-Help}!Help@{Help}}
+\subsubsection[{Display\-Help}]{\setlength{\rightskip}{0pt plus 5cm}void Help\-::\-Display\-Help (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_help_a90df3a8e177928ed7d7043a51ee5ae7e}
+
+
+Displays help window. 
+
+The function will open a new window that will display the informations the player needs to play. It contains commands, the rules of the game and the available options in the configuration file. \hypertarget{class_help_a343b57df159628b1e9707893b6c04655}{\index{Help@{Help}!Read\-Help\-File@{Read\-Help\-File}}
+\index{Read\-Help\-File@{Read\-Help\-File}!Help@{Help}}
+\subsubsection[{Read\-Help\-File}]{\setlength{\rightskip}{0pt plus 5cm}void Help\-::\-Read\-Help\-File (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{File\-Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_help_a343b57df159628b1e9707893b6c04655}
+
+
+Read the help file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em The} & path of the help file.\\
+\hline
+\end{DoxyParams}
+The function will read the help file that have the path we give by parameters and store the file in a vector. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{help_8hpp}{help.\-hpp}\item 
+src/\hyperlink{help_8cpp}{help.\-cpp}\end{DoxyCompactItemize}

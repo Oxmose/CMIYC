@@ -1,0 +1,130 @@
+\hypertarget{class_square}{\section{Square Class Reference}
+\label{class_square}\index{Square@{Square}}
+}
+
+
+The squares of the board.  
+
+
+
+
+{\ttfamily \#include $<$square.\-hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_square_aceee9ddfd86ad247ed3ddcdc16566d21}{Square} (\hyperlink{common_8hpp_a64071507b27c62fbdfefd4e0d29e5f81}{Player} \hyperlink{class_square_a927d50b9facba741730e47149e1d4d5c}{content}=N\-O\-N\-E, bool \hyperlink{class_square_ad45dd8efff3644a93ce040acee79a7ea}{has\-Barrier}=false)
+\begin{DoxyCompactList}\small\item\em The constructor. \end{DoxyCompactList}\item 
+bool \hyperlink{class_square_a9838192799e387c69cdb81476b46c05b}{Contains\-Player} ()
+\begin{DoxyCompactList}\small\item\em Checks if the \hyperlink{class_square}{Square} contains any player. \end{DoxyCompactList}\item 
+bool \hyperlink{class_square_a944e8df6fff00c13da33bb4cd7b390af}{Contains\-Player} (\hyperlink{common_8hpp_a64071507b27c62fbdfefd4e0d29e5f81}{Player} p)
+\begin{DoxyCompactList}\small\item\em Checks if the \hyperlink{class_square}{Square} contains a particular player. \end{DoxyCompactList}\item 
+bool \hyperlink{class_square_aa494f3342cdd923a6ed8aa3e1dfa78cd}{Contains\-Barrier} ()
+\begin{DoxyCompactList}\small\item\em Checks if the \hyperlink{class_square}{Square} contains a barrier. \end{DoxyCompactList}\item 
+\hypertarget{class_square_abf870b606aff7b6b3db6a312603bec3d}{bool {\bfseries Contains\-Item} ()}\label{class_square_abf870b606aff7b6b3db6a312603bec3d}
+
+\item 
+\hypertarget{class_square_ac4e8f3a8b6da034cd4e1bf4b7c4645e4}{void \hyperlink{class_square_ac4e8f3a8b6da034cd4e1bf4b7c4645e4}{Add\-Item} ()}\label{class_square_ac4e8f3a8b6da034cd4e1bf4b7c4645e4}
+
+\begin{DoxyCompactList}\small\item\em Adds an item to the \hyperlink{class_square}{Square}. \end{DoxyCompactList}\item 
+\hypertarget{class_square_a9003455324c3197a96086ee54c519e00}{void \hyperlink{class_square_a9003455324c3197a96086ee54c519e00}{Delete\-Item} ()}\label{class_square_a9003455324c3197a96086ee54c519e00}
+
+\begin{DoxyCompactList}\small\item\em Removes the item in the square. \end{DoxyCompactList}\item 
+\hypertarget{class_square_ab27a5d7cefcf2184aa507ca2214b3e6f}{\hyperlink{common_8hpp_ad0becfb66125d1ea6decae2b28ebb6db}{Power\-Up} \hyperlink{class_square_ab27a5d7cefcf2184aa507ca2214b3e6f}{Whitch\-Power\-Up} ()}\label{class_square_ab27a5d7cefcf2184aa507ca2214b3e6f}
+
+\begin{DoxyCompactList}\small\item\em Check whitch Power\-Up the player have. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_square_a927d50b9facba741730e47149e1d4d5c}{\hyperlink{common_8hpp_a64071507b27c62fbdfefd4e0d29e5f81}{Player} \hyperlink{class_square_a927d50b9facba741730e47149e1d4d5c}{content}}\label{class_square_a927d50b9facba741730e47149e1d4d5c}
+
+\begin{DoxyCompactList}\small\item\em The content of the \hyperlink{class_square}{Square}. \end{DoxyCompactList}\item 
+\hypertarget{class_square_ad45dd8efff3644a93ce040acee79a7ea}{bool \hyperlink{class_square_ad45dd8efff3644a93ce040acee79a7ea}{has\-Barrier}}\label{class_square_ad45dd8efff3644a93ce040acee79a7ea}
+
+\begin{DoxyCompactList}\small\item\em Stores if the \hyperlink{class_square}{Square} contains a barrier. \end{DoxyCompactList}\item 
+\hypertarget{class_square_a8190f775f36f202a4612d066c56ee9c2}{\hyperlink{common_8hpp_ad0becfb66125d1ea6decae2b28ebb6db}{Power\-Up} \hyperlink{class_square_a8190f775f36f202a4612d066c56ee9c2}{Item}}\label{class_square_a8190f775f36f202a4612d066c56ee9c2}
+
+\begin{DoxyCompactList}\small\item\em Stores if the \hyperlink{class_square}{Square} contains an item. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The squares of the board. 
+
+One \hyperlink{class_square}{Square} object represents one square of the playfield and its content. The content of a \hyperlink{class_square}{Square} cannot be modified after its creation. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_square_aceee9ddfd86ad247ed3ddcdc16566d21}{\index{Square@{Square}!Square@{Square}}
+\index{Square@{Square}!Square@{Square}}
+\subsubsection[{Square}]{\setlength{\rightskip}{0pt plus 5cm}Square\-::\-Square (
+\begin{DoxyParamCaption}
+\item[{{\bf Player}}]{content = {\ttfamily NONE}, }
+\item[{bool}]{has\-Barrier = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}}\label{class_square_aceee9ddfd86ad247ed3ddcdc16566d21}
+
+
+The constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em content} & The content of the \hyperlink{class_square}{Square}, defaults to N\-O\-N\-E. \\
+\hline
+{\em has\-Barrier} & Specifies if the \hyperlink{class_square}{Square} contains a barrier, default to false. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_square_aa494f3342cdd923a6ed8aa3e1dfa78cd}{\index{Square@{Square}!Contains\-Barrier@{Contains\-Barrier}}
+\index{Contains\-Barrier@{Contains\-Barrier}!Square@{Square}}
+\subsubsection[{Contains\-Barrier}]{\setlength{\rightskip}{0pt plus 5cm}bool Square\-::\-Contains\-Barrier (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_square_aa494f3342cdd923a6ed8aa3e1dfa78cd}
+
+
+Checks if the \hyperlink{class_square}{Square} contains a barrier. 
+
+\begin{DoxyReturn}{Returns}
+true if the \hyperlink{class_square}{Square} contains a barrier, false otherwise. 
+\end{DoxyReturn}
+\hypertarget{class_square_a9838192799e387c69cdb81476b46c05b}{\index{Square@{Square}!Contains\-Player@{Contains\-Player}}
+\index{Contains\-Player@{Contains\-Player}!Square@{Square}}
+\subsubsection[{Contains\-Player}]{\setlength{\rightskip}{0pt plus 5cm}bool Square\-::\-Contains\-Player (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_square_a9838192799e387c69cdb81476b46c05b}
+
+
+Checks if the \hyperlink{class_square}{Square} contains any player. 
+
+\begin{DoxyReturn}{Returns}
+false if the \hyperlink{class_square}{Square} contains N\-O\-N\-E, true otherwise. 
+\end{DoxyReturn}
+\hypertarget{class_square_a944e8df6fff00c13da33bb4cd7b390af}{\index{Square@{Square}!Contains\-Player@{Contains\-Player}}
+\index{Contains\-Player@{Contains\-Player}!Square@{Square}}
+\subsubsection[{Contains\-Player}]{\setlength{\rightskip}{0pt plus 5cm}bool Square\-::\-Contains\-Player (
+\begin{DoxyParamCaption}
+\item[{{\bf Player}}]{p}
+\end{DoxyParamCaption}
+)}}\label{class_square_a944e8df6fff00c13da33bb4cd7b390af}
+
+
+Checks if the \hyperlink{class_square}{Square} contains a particular player. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & The player to look for. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the \hyperlink{class_square}{Square} contains p, false otherwise. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{square_8hpp}{square.\-hpp}\item 
+src/\hyperlink{square_8cpp}{square.\-cpp}\end{DoxyCompactItemize}

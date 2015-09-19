@@ -1,0 +1,83 @@
+\hypertarget{common_8hpp}{\section{src/common.hpp File Reference}
+\label{common_8hpp}\index{src/common.\-hpp@{src/common.\-hpp}}
+}
+
+
+Common header.  
+
+
+{\ttfamily \#include $<$utility$>$}\\*
+Include dependency graph for common.\-hpp\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=168pt]{common_8hpp__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{common_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structuser__exit}{user\-\_\-exit}
+\begin{DoxyCompactList}\small\item\em The exception type thrown when the user wants to exit the game prematurely. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{common_8hpp_af5a69199868671fc85779715443d7e7d}{typedef std\-::pair$<$ unsigned, \\*
+unsigned $>$ \hyperlink{common_8hpp_af5a69199868671fc85779715443d7e7d}{Coor}}\label{common_8hpp_af5a69199868671fc85779715443d7e7d}
+
+\begin{DoxyCompactList}\small\item\em Coordinates in a two dimensionnal matrix. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{common_8hpp_a3b27da0d46d4c36bc71511bcea2db296}{Player} \{ {\bfseries player1} = 1, 
+{\bfseries player2} = 2, 
+{\bfseries no\-\_\-player} = 3
+ \}
+\begin{DoxyCompactList}\small\item\em One of the players or no\-\_\-player. \end{DoxyCompactList}\item 
+enum \hyperlink{common_8hpp_afe5d319262bda17c06308828231bd68c}{Direction} \{ \\*
+{\bfseries north}, 
+{\bfseries north\-\_\-east}, 
+{\bfseries east}, 
+{\bfseries south\-\_\-east}, 
+\\*
+{\bfseries south}, 
+{\bfseries south\-\_\-west}, 
+{\bfseries west}, 
+{\bfseries north\-\_\-west}
+ \}
+\begin{DoxyCompactList}\small\item\em One of the eight cardinal points. \end{DoxyCompactList}\item 
+enum \hyperlink{common_8hpp_ab119e1d9a1ae19c7528143bf1fe16c3a}{Power\-Up} \{ \\*
+{\bfseries double\-\_\-speed}, 
+{\bfseries teleportation}, 
+{\bfseries break\-\_\-wall}, 
+{\bfseries change\-\_\-wall}, 
+\\*
+{\bfseries no\-\_\-power\-\_\-up}
+ \}
+\begin{DoxyCompactList}\small\item\em Different sort of power up. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Common header. \begin{DoxyAuthor}{Authors}
+\-: J. Saffi, Y. Vidal, Y. Roux, A. Torres Aurora Dugo
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+\-: 08/01/14
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+\-: 1.\-0
+\end{DoxyVersion}
+Contains the type definitions used throughout the project.
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{board_8cpp}{board.\-cpp} 
+\end{DoxySeeAlso}

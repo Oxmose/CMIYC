@@ -1,0 +1,7 @@
+<map id="ReadBarrierApparitionFrequency" name="ReadBarrierApparitionFrequency">
+<area shape="rect" id="node2" href="$class_c_board.html#a2e77f37bac4646bcf1dd6e5f24582392" title="The detailed constructor. " alt="" coords="278,5,397,32"/>
+<area shape="rect" id="node3" href="$class_c_board.html#a3f41c4ac3c41c93d094c9cf0574e57d9" title="Delete all wall in the board and generate another board with wall. " alt="" coords="265,56,410,83"/>
+<area shape="rect" id="node6" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Main function. " alt="" coords="856,81,907,108"/>
+<area shape="rect" id="node4" href="$class_c_board.html#ab4117c3eab65f2cb45eb1d6ad6c26b21" title="Apply a powerUp on a player. " alt="" coords="459,56,621,83"/>
+<area shape="rect" id="node5" href="$class_c_board.html#a9b825449509fa118303842731dde17ff" title="Plays a turn of the game. " alt="" coords="669,56,808,83"/>
+</map>

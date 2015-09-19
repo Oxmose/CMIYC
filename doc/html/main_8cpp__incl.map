@@ -1,0 +1,10 @@
+<map id="src/main.cpp" name="src/main.cpp">
+<area shape="rect" id="node2" href="$main_8hpp.html" title="Main file header. " alt="" coords="848,80,922,107"/>
+<area shape="rect" id="node3" href="$common_8hpp.html" title="Common header. " alt="" coords="542,304,639,331"/>
+<area shape="rect" id="node5" href="$board_8hpp.html" title="Board class header. " alt="" coords="429,155,507,181"/>
+<area shape="rect" id="node9" href="$confmanager_8hpp.html" title="Configuration file management header. " alt="" coords="994,229,1116,256"/>
+<area shape="rect" id="node21" href="$menu_8hpp.html" title="Menu class header. " alt="" coords="846,155,924,181"/>
+<area shape="rect" id="node23" href="$form_8hpp.html" title="Header of the Form class. " alt="" coords="1154,155,1227,181"/>
+<area shape="rect" id="node25" href="$help_8hpp.html" title="Help class header. " alt="" coords="1242,229,1312,256"/>
+<area shape="rect" id="node6" href="$square_8hpp.html" title="Square class header. " alt="" coords="589,229,675,256"/>
+</map>

@@ -1,0 +1,59 @@
+
+	-Key binding
+
+  y  k  u		  7  8  9
+   \ | /		   \ | /
+h -- + -- l		4 -- + -- 6
+   / | \		   / | \
+  b  j  n		  1  2  3
+
+
+	-Rules :
+
+The rules are simples : catch your opponent by moving thanks to the keys.
+The first player to catch the other win !
+
+X and O represent the players, the highlighted player is to play the next turn.
+
+# represent obstacles the players can't get through.
+
+@ represent items the players can pick up with various effects.
+
+
+
+
+	-Configuration file options :
+
+board_width : set the witdth of the play ground.
+board_height : set the height of the play ground.
+starting_player : set the starting player.
+color_player1 : set the player1's color.
+color_player2 : set the player2's color.
+color_empty : set the color of an empty square.
+color_item : set the item's color.
+barrier_apparition_frequency : set barrier apparition frequency (between 0 and 100).
+item_apparition_frequency : set item apparition frequency (between 0 and 100).
+dots_for_background : set dots (1) or not (0).
+
+
+	-Possible colors :
+
+COLOR_BLACK   0
+COLOR_RED     1
+COLOR_GREEN   2
+COLOR_YELLOW  3
+COLOR_BLUE    4
+COLOR_MAGENTA 5
+COLOR_CYAN    6
+COLOR_WHITE   7
+
+    -Credits
+
+This software was released by the BitElse team, composed of :
+    -Mr. Saffi Jibril
+    -Mr. Vidal Yon
+    -Mr. Roux Yohan
+    -Mr. Torres Aurora Dugo Alexy
+
+It uses the ncurses library to manage the display option, the menus and the settings form.
+

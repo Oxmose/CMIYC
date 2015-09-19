@@ -1,0 +1,6 @@
+<map id="ReadItemApparitionFrequency" name="ReadItemApparitionFrequency">
+<area shape="rect" id="node2" href="$class_c_board.html#a4095c3a98176578b2e1c478b5391eb1b" title="Spawns an item in the board. " alt="" coords="254,5,394,32"/>
+<area shape="rect" id="node5" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Main function. " alt="" coords="685,56,736,83"/>
+<area shape="rect" id="node3" href="$class_c_board.html#a9b825449509fa118303842731dde17ff" title="Plays a turn of the game. " alt="" coords="443,5,581,32"/>
+<area shape="rect" id="node4" href="$class_c_board.html#ab4117c3eab65f2cb45eb1d6ad6c26b21" title="Apply a powerUp on a player. " alt="" coords="630,5,791,32"/>
+</map>

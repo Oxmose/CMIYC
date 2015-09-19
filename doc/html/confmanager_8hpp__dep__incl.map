@@ -1,0 +1,11 @@
+<map id="src/confmanager.hpp" name="src/confmanager.hpp">
+<area shape="rect" id="node2" href="$board_8hpp.html" title="Board class header. " alt="" coords="41,80,143,107"/>
+<area shape="rect" id="node4" href="$main_8hpp.html" title="Main file header. " alt="" coords="131,155,228,181"/>
+<area shape="rect" id="node6" href="$confmanager_8cpp.html" title="Configuration file management implementation. " alt="" coords="463,80,607,107"/>
+<area shape="rect" id="node7" href="$form_8hpp.html" title="Header of the Form class. " alt="" coords="218,80,312,107"/>
+<area shape="rect" id="node9" href="$menu_8hpp.html" title="Menu class header. " alt="" coords="337,80,439,107"/>
+<area shape="rect" id="node3" href="$board_8cpp.html" title="Board class implementation. " alt="" coords="5,155,107,181"/>
+<area shape="rect" id="node5" href="$main_8cpp.html" title="Main file. " alt="" coords="131,229,228,256"/>
+<area shape="rect" id="node8" href="$form_8cpp.html" title="Implementation of the Form class. " alt="" coords="253,155,347,181"/>
+<area shape="rect" id="node10" href="$menu_8cpp.html" title="Menu class implementation. " alt="" coords="372,155,473,181"/>
+</map>

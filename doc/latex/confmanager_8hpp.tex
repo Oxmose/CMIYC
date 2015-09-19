@@ -1,0 +1,411 @@
+\hypertarget{confmanager_8hpp}{\section{src/confmanager.hpp File Reference}
+\label{confmanager_8hpp}\index{src/confmanager.\-hpp@{src/confmanager.\-hpp}}
+}
+
+
+Configuration file management header.  
+
+
+{\ttfamily \#include \char`\"{}common.\-hpp\char`\"{}}\\*
+{\ttfamily \#include $<$fstream$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$stdexcept$>$}\\*
+{\ttfamily \#include $<$exception$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$cctype$>$}\\*
+Include dependency graph for confmanager.\-hpp\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{confmanager_8hpp__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{confmanager_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{confmanager_8hpp_a3b34123ca1532b57b18493ad8d27d3ea}{\#define \hyperlink{confmanager_8hpp_a3b34123ca1532b57b18493ad8d27d3ea}{C\-O\-N\-F\-I\-G\-\_\-\-F\-I\-L\-E\-\_\-\-P\-A\-T\-H}~\char`\"{}config.\-cfg\char`\"{}}\label{confmanager_8hpp_a3b34123ca1532b57b18493ad8d27d3ea}
+
+\begin{DoxyCompactList}\small\item\em The (relative) path of the config file at execution. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T\-Y\-P\-E $>$ }\\T\-Y\-P\-E \hyperlink{confmanager_8hpp_ab494c812df3bda0b52b01fc351dd02b5}{Read\-Variable} (const std\-::string \&K\-File\-Name, const std\-::string \&K\-Variable\-Name)
+\begin{DoxyCompactList}\small\item\em Configuration file parser for one variable. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T\-Y\-P\-E $>$ }\\void \hyperlink{confmanager_8hpp_a4442b582c706ad30402a040866834f36}{Write\-Variable} (const std\-::string \&K\-File\-Name, const std\-::string \&K\-Variable\-Name, const T\-Y\-P\-E \&K\-Variable\-Value, bool Erase\-File)
+\begin{DoxyCompactList}\small\item\em Configuration file writer for one variable. \end{DoxyCompactList}\item 
+\hyperlink{common_8hpp_a3b27da0d46d4c36bc71511bcea2db296}{Player} \hyperlink{confmanager_8hpp_a7320e0a28c46c1cf87e5b1e37c4d118f}{Read\-Starting\-Player} ()
+\begin{DoxyCompactList}\small\item\em Reads the starting Player in the config file. \end{DoxyCompactList}\item 
+\hyperlink{common_8hpp_af5a69199868671fc85779715443d7e7d}{Coor} \hyperlink{confmanager_8hpp_a21454348fa3ef45b2521b40eccb565c1}{Read\-Board\-Dimensions} ()
+\begin{DoxyCompactList}\small\item\em Reads the dimensions of the board in the config file. \end{DoxyCompactList}\item 
+int \hyperlink{confmanager_8hpp_abed3527c8a74d39e07eca9b02fd76e4f}{Read\-Player\-Color} (\hyperlink{common_8hpp_a3b27da0d46d4c36bc71511bcea2db296}{Player} player)
+\begin{DoxyCompactList}\small\item\em Reads the player color in the config file. \end{DoxyCompactList}\item 
+int \hyperlink{confmanager_8hpp_ae91dc572702641134500948058bbfd8d}{Read\-Item\-Color} ()
+\begin{DoxyCompactList}\small\item\em Reads the item color in the config file. \end{DoxyCompactList}\item 
+float \hyperlink{confmanager_8hpp_a3d0fe9400c5579cf4c83a4df7c7dd210}{Read\-Barrier\-Apparition\-Frequency} ()
+\begin{DoxyCompactList}\small\item\em Reads the apparition frequency of barriers. \end{DoxyCompactList}\item 
+float \hyperlink{confmanager_8hpp_af93dd7fca974f94ff41fb678dd128be6}{Read\-Item\-Apparition\-Frequency} ()
+\begin{DoxyCompactList}\small\item\em Reads the apparition frequency of items. \end{DoxyCompactList}\item 
+bool \hyperlink{confmanager_8hpp_a372660ab9be4353c3edd6538e863ffd1}{Read\-Dots\-For\-Background} ()
+\begin{DoxyCompactList}\small\item\em Read if the background display dots or not. \end{DoxyCompactList}\item 
+void \hyperlink{confmanager_8hpp_a1d7e449f88cd4b8f3f304bffedff4cf8}{Write\-Float\-In\-File} (const std\-::string \&K\-Variable\-Name, char $\ast$Variable\-Value)
+\begin{DoxyCompactList}\small\item\em Write a float number in the configuration file. \end{DoxyCompactList}\item 
+void \hyperlink{confmanager_8hpp_aa77d65a36d86e37926c1c3accd5bcd4f}{Write\-Int\-In\-File} (const std\-::string \&K\-Variable\-Name, char $\ast$Variable\-Value)
+\begin{DoxyCompactList}\small\item\em Write an integer number in the configuration file. \end{DoxyCompactList}\item 
+void \hyperlink{confmanager_8hpp_a99faa18985acbb2d89b8c67a350ca1d0}{Write\-Comment\-In\-File} (const std\-::string \&K\-Comment, bool Erase\-File=false)
+\begin{DoxyCompactList}\small\item\em Write a comment in the configuration file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Configuration file management header. \begin{DoxyAuthor}{Authors}
+\-: J. Saffi, Y. Vidal, Y. Roux, A. Torres Aurora Dugo
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+\-: 08/01/14
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+\-: 1.\-0
+\end{DoxyVersion}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{confmanager_8cpp}{confmanager.\-cpp} 
+\end{DoxySeeAlso}
+
+
+\subsection{Function Documentation}
+\hypertarget{confmanager_8hpp_a3d0fe9400c5579cf4c83a4df7c7dd210}{\index{confmanager.\-hpp@{confmanager.\-hpp}!Read\-Barrier\-Apparition\-Frequency@{Read\-Barrier\-Apparition\-Frequency}}
+\index{Read\-Barrier\-Apparition\-Frequency@{Read\-Barrier\-Apparition\-Frequency}!confmanager.hpp@{confmanager.\-hpp}}
+\subsubsection[{Read\-Barrier\-Apparition\-Frequency}]{\setlength{\rightskip}{0pt plus 5cm}float Read\-Barrier\-Apparition\-Frequency (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{confmanager_8hpp_a3d0fe9400c5579cf4c83a4df7c7dd210}
+
+
+Reads the apparition frequency of barriers. 
+
+\begin{DoxyReturn}{Returns}
+The apparition frequency of barriers.
+\end{DoxyReturn}
+The returned value is between 0 and 1. 
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{confmanager_8hpp_a3d0fe9400c5579cf4c83a4df7c7dd210_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{confmanager_8hpp_a21454348fa3ef45b2521b40eccb565c1}{\index{confmanager.\-hpp@{confmanager.\-hpp}!Read\-Board\-Dimensions@{Read\-Board\-Dimensions}}
+\index{Read\-Board\-Dimensions@{Read\-Board\-Dimensions}!confmanager.hpp@{confmanager.\-hpp}}
+\subsubsection[{Read\-Board\-Dimensions}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Coor} Read\-Board\-Dimensions (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{confmanager_8hpp_a21454348fa3ef45b2521b40eccb565c1}
+
+
+Reads the dimensions of the board in the config file. 
+
+\begin{DoxyReturn}{Returns}
+The dimensions of the board.
+\end{DoxyReturn}
+The function will return the dimensions of the board as set in the configuration file. It uses the Read\-Variable function. The path of the config file is specified in a define made in \hyperlink{confmanager_8hpp}{confmanager.\-hpp} 
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=272pt]{confmanager_8hpp_a21454348fa3ef45b2521b40eccb565c1_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{confmanager_8hpp_a372660ab9be4353c3edd6538e863ffd1}{\index{confmanager.\-hpp@{confmanager.\-hpp}!Read\-Dots\-For\-Background@{Read\-Dots\-For\-Background}}
+\index{Read\-Dots\-For\-Background@{Read\-Dots\-For\-Background}!confmanager.hpp@{confmanager.\-hpp}}
+\subsubsection[{Read\-Dots\-For\-Background}]{\setlength{\rightskip}{0pt plus 5cm}bool Read\-Dots\-For\-Background (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{confmanager_8hpp_a372660ab9be4353c3edd6538e863ffd1}
+
+
+Read if the background display dots or not. 
+
+\begin{DoxyReturn}{Returns}
+If the background has dots or not.
+\end{DoxyReturn}
+The returned value is a booleen that will set the background character to none or dots. 
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{confmanager_8hpp_a372660ab9be4353c3edd6538e863ffd1_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{confmanager_8hpp_af93dd7fca974f94ff41fb678dd128be6}{\index{confmanager.\-hpp@{confmanager.\-hpp}!Read\-Item\-Apparition\-Frequency@{Read\-Item\-Apparition\-Frequency}}
+\index{Read\-Item\-Apparition\-Frequency@{Read\-Item\-Apparition\-Frequency}!confmanager.hpp@{confmanager.\-hpp}}
+\subsubsection[{Read\-Item\-Apparition\-Frequency}]{\setlength{\rightskip}{0pt plus 5cm}float Read\-Item\-Apparition\-Frequency (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{confmanager_8hpp_af93dd7fca974f94ff41fb678dd128be6}
+
+
+Reads the apparition frequency of items. 
+
+\begin{DoxyReturn}{Returns}
+The apparition frequency of items.
+\end{DoxyReturn}
+The returned value is between 0 and 1. 
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{confmanager_8hpp_af93dd7fca974f94ff41fb678dd128be6_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{confmanager_8hpp_ae91dc572702641134500948058bbfd8d}{\index{confmanager.\-hpp@{confmanager.\-hpp}!Read\-Item\-Color@{Read\-Item\-Color}}
+\index{Read\-Item\-Color@{Read\-Item\-Color}!confmanager.hpp@{confmanager.\-hpp}}
+\subsubsection[{Read\-Item\-Color}]{\setlength{\rightskip}{0pt plus 5cm}int Read\-Item\-Color (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{confmanager_8hpp_ae91dc572702641134500948058bbfd8d}
+
+
+Reads the item color in the config file. 
+
+\begin{DoxyReturn}{Returns}
+The Item's color equivalent as an ncurses define.
+\end{DoxyReturn}
+It uses the Read\-Variable function to read the configuration file. The path of the config file is specified in a define made in \hyperlink{confmanager_8hpp}{confmanager.\-hpp} 
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=238pt]{confmanager_8hpp_ae91dc572702641134500948058bbfd8d_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{confmanager_8hpp_abed3527c8a74d39e07eca9b02fd76e4f}{\index{confmanager.\-hpp@{confmanager.\-hpp}!Read\-Player\-Color@{Read\-Player\-Color}}
+\index{Read\-Player\-Color@{Read\-Player\-Color}!confmanager.hpp@{confmanager.\-hpp}}
+\subsubsection[{Read\-Player\-Color}]{\setlength{\rightskip}{0pt plus 5cm}int Read\-Player\-Color (
+\begin{DoxyParamCaption}
+\item[{{\bf Player}}]{player}
+\end{DoxyParamCaption}
+)}}\label{confmanager_8hpp_abed3527c8a74d39e07eca9b02fd76e4f}
+
+
+Reads the player color in the config file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & Player to get the color of. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The Player's color equivalent as an ncurses define.
+\end{DoxyReturn}
+The function will return the color of the player whose name is the parameter. It uses the Read\-Variable function to read the configuration file. The path of the config file is specified in a define made in \hyperlink{confmanager_8hpp}{confmanager.\-hpp} 
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{confmanager_8hpp_abed3527c8a74d39e07eca9b02fd76e4f_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{confmanager_8hpp_a7320e0a28c46c1cf87e5b1e37c4d118f}{\index{confmanager.\-hpp@{confmanager.\-hpp}!Read\-Starting\-Player@{Read\-Starting\-Player}}
+\index{Read\-Starting\-Player@{Read\-Starting\-Player}!confmanager.hpp@{confmanager.\-hpp}}
+\subsubsection[{Read\-Starting\-Player}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Player} Read\-Starting\-Player (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{confmanager_8hpp_a7320e0a28c46c1cf87e5b1e37c4d118f}
+
+
+Reads the starting Player in the config file. 
+
+\begin{DoxyReturn}{Returns}
+The starting Player.
+\end{DoxyReturn}
+The function will return which player will begin to play. It uses the Read\-Variable Function. The path of the config file is specified in a define made in \hyperlink{confmanager_8hpp}{confmanager.\-hpp} 
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{confmanager_8hpp_a7320e0a28c46c1cf87e5b1e37c4d118f_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{confmanager_8hpp_ab494c812df3bda0b52b01fc351dd02b5}{\index{confmanager.\-hpp@{confmanager.\-hpp}!Read\-Variable@{Read\-Variable}}
+\index{Read\-Variable@{Read\-Variable}!confmanager.hpp@{confmanager.\-hpp}}
+\subsubsection[{Read\-Variable}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\-Y\-P\-E $>$ T\-Y\-P\-E Read\-Variable (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{K\-File\-Name, }
+\item[{const std\-::string \&}]{K\-Variable\-Name}
+\end{DoxyParamCaption}
+)}}\label{confmanager_8hpp_ab494c812df3bda0b52b01fc351dd02b5}
+
+
+Configuration file parser for one variable. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em K\-File\-Name} & File path of the configuration file. \\
+\hline
+{\em K\-Variable\-Name} & Name of the parsed variable. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The parsed value of the variable.
+\end{DoxyReturn}
+The function will parse the file we give him in first place parameter. To achieve this, it will read the variable's value in the configuration file and return the value. It uses a template to be able to parse any type using operator $>$$>$ \hypertarget{confmanager_8hpp_a99faa18985acbb2d89b8c67a350ca1d0}{\index{confmanager.\-hpp@{confmanager.\-hpp}!Write\-Comment\-In\-File@{Write\-Comment\-In\-File}}
+\index{Write\-Comment\-In\-File@{Write\-Comment\-In\-File}!confmanager.hpp@{confmanager.\-hpp}}
+\subsubsection[{Write\-Comment\-In\-File}]{\setlength{\rightskip}{0pt plus 5cm}void Write\-Comment\-In\-File (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{K\-Comment, }
+\item[{bool}]{Erase\-File}
+\end{DoxyParamCaption}
+)}}\label{confmanager_8hpp_a99faa18985acbb2d89b8c67a350ca1d0}
+
+
+Write a comment in the configuration file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em K\-Comment} & The comment to inject. \\
+\hline
+{\em Erase\-File} & Set if the configuration file have to be erased.\\
+\hline
+\end{DoxyParams}
+The function will write the the comment gave in parameters thanks to the Write\-Variable template 
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{confmanager_8hpp_a99faa18985acbb2d89b8c67a350ca1d0_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{confmanager_8hpp_a1d7e449f88cd4b8f3f304bffedff4cf8}{\index{confmanager.\-hpp@{confmanager.\-hpp}!Write\-Float\-In\-File@{Write\-Float\-In\-File}}
+\index{Write\-Float\-In\-File@{Write\-Float\-In\-File}!confmanager.hpp@{confmanager.\-hpp}}
+\subsubsection[{Write\-Float\-In\-File}]{\setlength{\rightskip}{0pt plus 5cm}void Write\-Float\-In\-File (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{K\-Variable\-Name, }
+\item[{char $\ast$}]{Variable\-Value}
+\end{DoxyParamCaption}
+)}}\label{confmanager_8hpp_a1d7e449f88cd4b8f3f304bffedff4cf8}
+
+
+Write a float number in the configuration file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em K\-Variable\-Name} & The name of the variable to inject. \\
+\hline
+{\em Variable\-Value} & The value of the variable to inject.\\
+\hline
+\end{DoxyParams}
+The function will write the name of the float variable and her value thanks to the Write\-Variable template. 
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{confmanager_8hpp_a1d7e449f88cd4b8f3f304bffedff4cf8_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{confmanager_8hpp_aa77d65a36d86e37926c1c3accd5bcd4f}{\index{confmanager.\-hpp@{confmanager.\-hpp}!Write\-Int\-In\-File@{Write\-Int\-In\-File}}
+\index{Write\-Int\-In\-File@{Write\-Int\-In\-File}!confmanager.hpp@{confmanager.\-hpp}}
+\subsubsection[{Write\-Int\-In\-File}]{\setlength{\rightskip}{0pt plus 5cm}void Write\-Int\-In\-File (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{K\-Variable\-Name, }
+\item[{char $\ast$}]{Variable\-Value}
+\end{DoxyParamCaption}
+)}}\label{confmanager_8hpp_aa77d65a36d86e37926c1c3accd5bcd4f}
+
+
+Write an integer number in the configuration file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em K\-Variable\-Name} & Name of the variable to inject. \\
+\hline
+{\em Variable\-Value} & Value of the variable to inject.\\
+\hline
+\end{DoxyParams}
+The function will write the name of the integer variable and her value thanks to the Write\-Variable template. 
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{confmanager_8hpp_aa77d65a36d86e37926c1c3accd5bcd4f_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{confmanager_8hpp_a4442b582c706ad30402a040866834f36}{\index{confmanager.\-hpp@{confmanager.\-hpp}!Write\-Variable@{Write\-Variable}}
+\index{Write\-Variable@{Write\-Variable}!confmanager.hpp@{confmanager.\-hpp}}
+\subsubsection[{Write\-Variable}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\-Y\-P\-E $>$ void Write\-Variable (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{K\-File\-Name, }
+\item[{const std\-::string \&}]{K\-Variable\-Name, }
+\item[{const T\-Y\-P\-E \&}]{K\-Variable\-Value, }
+\item[{bool}]{Erase\-File}
+\end{DoxyParamCaption}
+)}}\label{confmanager_8hpp_a4442b582c706ad30402a040866834f36}
+
+
+Configuration file writer for one variable. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em K\-File\-Name} & File path of the configuration file. \\
+\hline
+{\em K\-Variable\-Name} & Name of the variable to inject. \\
+\hline
+{\em K\-Variable\-Value} & Value of the variable to inject. \\
+\hline
+{\em Erase\-File} & Set if the file must be erased before being writed.\\
+\hline
+\end{DoxyParams}
+The function will write the file we give him in first place parameter and her value we give in second place parameter. To achieve this, it will write the variable and then value in the configuration file. It uses a template to be able to write any type properly using operator $>$$>$ 

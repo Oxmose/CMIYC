@@ -1,0 +1,115 @@
+\contentsline {chapter}{\numberline {1}Main Page}{1}{chapter.1}
+\contentsline {chapter}{\numberline {2}Class Index}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}Class List}{3}{section.2.1}
+\contentsline {chapter}{\numberline {3}File Index}{5}{chapter.3}
+\contentsline {section}{\numberline {3.1}File List}{5}{section.3.1}
+\contentsline {chapter}{\numberline {4}Class Documentation}{7}{chapter.4}
+\contentsline {section}{\numberline {4.1}C\discretionary {-}{}{}Board Class Reference}{7}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Detailed Description}{8}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Constructor \& Destructor Documentation}{8}{subsection.4.1.2}
+\contentsline {subsubsection}{\numberline {4.1.2.1}C\discretionary {-}{}{}Board}{8}{subsubsection.4.1.2.1}
+\contentsline {subsubsection}{\numberline {4.1.2.2}C\discretionary {-}{}{}Board}{8}{subsubsection.4.1.2.2}
+\contentsline {subsubsection}{\numberline {4.1.2.3}$\sim $\discretionary {-}{}{}C\discretionary {-}{}{}Board}{8}{subsubsection.4.1.2.3}
+\contentsline {subsection}{\numberline {4.1.3}Member Function Documentation}{8}{subsection.4.1.3}
+\contentsline {subsubsection}{\numberline {4.1.3.1}Apply\discretionary {-}{}{}Power\discretionary {-}{}{}Up}{8}{subsubsection.4.1.3.1}
+\contentsline {subsubsection}{\numberline {4.1.3.2}Display}{9}{subsubsection.4.1.3.2}
+\contentsline {subsubsection}{\numberline {4.1.3.3}Move}{9}{subsubsection.4.1.3.3}
+\contentsline {subsubsection}{\numberline {4.1.3.4}Play\discretionary {-}{}{}Round}{9}{subsubsection.4.1.3.4}
+\contentsline {subsubsection}{\numberline {4.1.3.5}Spawn\discretionary {-}{}{}Item}{9}{subsubsection.4.1.3.5}
+\contentsline {subsubsection}{\numberline {4.1.3.6}User\discretionary {-}{}{}Input}{9}{subsubsection.4.1.3.6}
+\contentsline {subsection}{\numberline {4.1.4}Member Data Documentation}{10}{subsection.4.1.4}
+\contentsline {subsubsection}{\numberline {4.1.4.1}Player\discretionary {-}{}{}Here}{10}{subsubsection.4.1.4.1}
+\contentsline {section}{\numberline {4.2}C\discretionary {-}{}{}Form Class Reference}{10}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Detailed Description}{11}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Constructor \& Destructor Documentation}{11}{subsection.4.2.2}
+\contentsline {subsubsection}{\numberline {4.2.2.1}C\discretionary {-}{}{}Form}{11}{subsubsection.4.2.2.1}
+\contentsline {subsubsection}{\numberline {4.2.2.2}$\sim $\discretionary {-}{}{}C\discretionary {-}{}{}Form}{11}{subsubsection.4.2.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Member Function Documentation}{11}{subsection.4.2.3}
+\contentsline {subsubsection}{\numberline {4.2.3.1}Display}{11}{subsubsection.4.2.3.1}
+\contentsline {section}{\numberline {4.3}C\discretionary {-}{}{}Help Class Reference}{11}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Detailed Description}{12}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Constructor \& Destructor Documentation}{12}{subsection.4.3.2}
+\contentsline {subsubsection}{\numberline {4.3.2.1}C\discretionary {-}{}{}Help}{12}{subsubsection.4.3.2.1}
+\contentsline {subsubsection}{\numberline {4.3.2.2}$\sim $\discretionary {-}{}{}C\discretionary {-}{}{}Help}{12}{subsubsection.4.3.2.2}
+\contentsline {subsection}{\numberline {4.3.3}Member Function Documentation}{12}{subsection.4.3.3}
+\contentsline {subsubsection}{\numberline {4.3.3.1}Display\discretionary {-}{}{}Help}{12}{subsubsection.4.3.3.1}
+\contentsline {subsubsection}{\numberline {4.3.3.2}Read\discretionary {-}{}{}Help\discretionary {-}{}{}File}{12}{subsubsection.4.3.3.2}
+\contentsline {section}{\numberline {4.4}C\discretionary {-}{}{}Menu Class Reference}{13}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Detailed Description}{13}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Constructor \& Destructor Documentation}{13}{subsection.4.4.2}
+\contentsline {subsubsection}{\numberline {4.4.2.1}C\discretionary {-}{}{}Menu}{13}{subsubsection.4.4.2.1}
+\contentsline {subsubsection}{\numberline {4.4.2.2}$\sim $\discretionary {-}{}{}C\discretionary {-}{}{}Menu}{13}{subsubsection.4.4.2.2}
+\contentsline {subsection}{\numberline {4.4.3}Member Function Documentation}{14}{subsection.4.4.3}
+\contentsline {subsubsection}{\numberline {4.4.3.1}Display}{14}{subsubsection.4.4.3.1}
+\contentsline {subsection}{\numberline {4.4.4}Member Data Documentation}{14}{subsection.4.4.4}
+\contentsline {subsubsection}{\numberline {4.4.4.1}item\discretionary {-}{}{}Count}{14}{subsubsection.4.4.4.1}
+\contentsline {section}{\numberline {4.5}C\discretionary {-}{}{}Square Class Reference}{14}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Detailed Description}{15}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}Constructor \& Destructor Documentation}{15}{subsection.4.5.2}
+\contentsline {subsubsection}{\numberline {4.5.2.1}C\discretionary {-}{}{}Square}{15}{subsubsection.4.5.2.1}
+\contentsline {subsection}{\numberline {4.5.3}Member Function Documentation}{15}{subsection.4.5.3}
+\contentsline {subsubsection}{\numberline {4.5.3.1}Add\discretionary {-}{}{}Item}{15}{subsubsection.4.5.3.1}
+\contentsline {subsubsection}{\numberline {4.5.3.2}Contains\discretionary {-}{}{}Barrier}{15}{subsubsection.4.5.3.2}
+\contentsline {subsubsection}{\numberline {4.5.3.3}Contains\discretionary {-}{}{}Item}{15}{subsubsection.4.5.3.3}
+\contentsline {subsubsection}{\numberline {4.5.3.4}Contains\discretionary {-}{}{}Player}{16}{subsubsection.4.5.3.4}
+\contentsline {subsubsection}{\numberline {4.5.3.5}Contains\discretionary {-}{}{}Player}{16}{subsubsection.4.5.3.5}
+\contentsline {section}{\numberline {4.6}user\discretionary {-}{}{}\_\discretionary {-}{}{}exit Struct Reference}{16}{section.4.6}
+\contentsline {subsection}{\numberline {4.6.1}Detailed Description}{16}{subsection.4.6.1}
+\contentsline {chapter}{\numberline {5}File Documentation}{17}{chapter.5}
+\contentsline {section}{\numberline {5.1}src/board.cpp File Reference}{17}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Detailed Description}{17}{subsection.5.1.1}
+\contentsline {section}{\numberline {5.2}src/board.hpp File Reference}{17}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Detailed Description}{18}{subsection.5.2.1}
+\contentsline {section}{\numberline {5.3}src/common.hpp File Reference}{18}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Detailed Description}{19}{subsection.5.3.1}
+\contentsline {section}{\numberline {5.4}src/confmanager.cpp File Reference}{19}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}Detailed Description}{20}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}Function Documentation}{20}{subsection.5.4.2}
+\contentsline {subsubsection}{\numberline {5.4.2.1}Read\discretionary {-}{}{}Barrier\discretionary {-}{}{}Apparition\discretionary {-}{}{}Frequency}{20}{subsubsection.5.4.2.1}
+\contentsline {subsubsection}{\numberline {5.4.2.2}Read\discretionary {-}{}{}Board\discretionary {-}{}{}Dimensions}{20}{subsubsection.5.4.2.2}
+\contentsline {subsubsection}{\numberline {5.4.2.3}Read\discretionary {-}{}{}Dots\discretionary {-}{}{}For\discretionary {-}{}{}Background}{21}{subsubsection.5.4.2.3}
+\contentsline {subsubsection}{\numberline {5.4.2.4}Read\discretionary {-}{}{}Item\discretionary {-}{}{}Apparition\discretionary {-}{}{}Frequency}{21}{subsubsection.5.4.2.4}
+\contentsline {subsubsection}{\numberline {5.4.2.5}Read\discretionary {-}{}{}Item\discretionary {-}{}{}Color}{21}{subsubsection.5.4.2.5}
+\contentsline {subsubsection}{\numberline {5.4.2.6}Read\discretionary {-}{}{}Player\discretionary {-}{}{}Color}{21}{subsubsection.5.4.2.6}
+\contentsline {subsubsection}{\numberline {5.4.2.7}Read\discretionary {-}{}{}Starting\discretionary {-}{}{}Player}{21}{subsubsection.5.4.2.7}
+\contentsline {subsubsection}{\numberline {5.4.2.8}Read\discretionary {-}{}{}Variable}{22}{subsubsection.5.4.2.8}
+\contentsline {subsubsection}{\numberline {5.4.2.9}Write\discretionary {-}{}{}Comment\discretionary {-}{}{}In\discretionary {-}{}{}File}{23}{subsubsection.5.4.2.9}
+\contentsline {subsubsection}{\numberline {5.4.2.10}Write\discretionary {-}{}{}Float\discretionary {-}{}{}In\discretionary {-}{}{}File}{23}{subsubsection.5.4.2.10}
+\contentsline {subsubsection}{\numberline {5.4.2.11}Write\discretionary {-}{}{}Int\discretionary {-}{}{}In\discretionary {-}{}{}File}{23}{subsubsection.5.4.2.11}
+\contentsline {subsubsection}{\numberline {5.4.2.12}Write\discretionary {-}{}{}Variable}{23}{subsubsection.5.4.2.12}
+\contentsline {section}{\numberline {5.5}src/confmanager.hpp File Reference}{24}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}Detailed Description}{25}{subsection.5.5.1}
+\contentsline {subsection}{\numberline {5.5.2}Function Documentation}{25}{subsection.5.5.2}
+\contentsline {subsubsection}{\numberline {5.5.2.1}Read\discretionary {-}{}{}Barrier\discretionary {-}{}{}Apparition\discretionary {-}{}{}Frequency}{25}{subsubsection.5.5.2.1}
+\contentsline {subsubsection}{\numberline {5.5.2.2}Read\discretionary {-}{}{}Board\discretionary {-}{}{}Dimensions}{25}{subsubsection.5.5.2.2}
+\contentsline {subsubsection}{\numberline {5.5.2.3}Read\discretionary {-}{}{}Dots\discretionary {-}{}{}For\discretionary {-}{}{}Background}{25}{subsubsection.5.5.2.3}
+\contentsline {subsubsection}{\numberline {5.5.2.4}Read\discretionary {-}{}{}Item\discretionary {-}{}{}Apparition\discretionary {-}{}{}Frequency}{26}{subsubsection.5.5.2.4}
+\contentsline {subsubsection}{\numberline {5.5.2.5}Read\discretionary {-}{}{}Item\discretionary {-}{}{}Color}{26}{subsubsection.5.5.2.5}
+\contentsline {subsubsection}{\numberline {5.5.2.6}Read\discretionary {-}{}{}Player\discretionary {-}{}{}Color}{26}{subsubsection.5.5.2.6}
+\contentsline {subsubsection}{\numberline {5.5.2.7}Read\discretionary {-}{}{}Starting\discretionary {-}{}{}Player}{26}{subsubsection.5.5.2.7}
+\contentsline {subsubsection}{\numberline {5.5.2.8}Read\discretionary {-}{}{}Variable}{26}{subsubsection.5.5.2.8}
+\contentsline {subsubsection}{\numberline {5.5.2.9}Write\discretionary {-}{}{}Comment\discretionary {-}{}{}In\discretionary {-}{}{}File}{27}{subsubsection.5.5.2.9}
+\contentsline {subsubsection}{\numberline {5.5.2.10}Write\discretionary {-}{}{}Float\discretionary {-}{}{}In\discretionary {-}{}{}File}{27}{subsubsection.5.5.2.10}
+\contentsline {subsubsection}{\numberline {5.5.2.11}Write\discretionary {-}{}{}Int\discretionary {-}{}{}In\discretionary {-}{}{}File}{27}{subsubsection.5.5.2.11}
+\contentsline {subsubsection}{\numberline {5.5.2.12}Write\discretionary {-}{}{}Variable}{27}{subsubsection.5.5.2.12}
+\contentsline {section}{\numberline {5.6}src/form.cpp File Reference}{28}{section.5.6}
+\contentsline {subsection}{\numberline {5.6.1}Detailed Description}{28}{subsection.5.6.1}
+\contentsline {section}{\numberline {5.7}src/form.hpp File Reference}{28}{section.5.7}
+\contentsline {subsection}{\numberline {5.7.1}Detailed Description}{28}{subsection.5.7.1}
+\contentsline {section}{\numberline {5.8}src/help.cpp File Reference}{29}{section.5.8}
+\contentsline {subsection}{\numberline {5.8.1}Detailed Description}{29}{subsection.5.8.1}
+\contentsline {section}{\numberline {5.9}src/help.hpp File Reference}{29}{section.5.9}
+\contentsline {subsection}{\numberline {5.9.1}Detailed Description}{30}{subsection.5.9.1}
+\contentsline {section}{\numberline {5.10}src/main.cpp File Reference}{30}{section.5.10}
+\contentsline {subsection}{\numberline {5.10.1}Detailed Description}{30}{subsection.5.10.1}
+\contentsline {section}{\numberline {5.11}src/main.hpp File Reference}{31}{section.5.11}
+\contentsline {subsection}{\numberline {5.11.1}Detailed Description}{31}{subsection.5.11.1}
+\contentsline {section}{\numberline {5.12}src/menu.cpp File Reference}{31}{section.5.12}
+\contentsline {subsection}{\numberline {5.12.1}Detailed Description}{31}{subsection.5.12.1}
+\contentsline {section}{\numberline {5.13}src/menu.hpp File Reference}{32}{section.5.13}
+\contentsline {subsection}{\numberline {5.13.1}Detailed Description}{32}{subsection.5.13.1}
+\contentsline {section}{\numberline {5.14}src/square.cpp File Reference}{32}{section.5.14}
+\contentsline {subsection}{\numberline {5.14.1}Detailed Description}{33}{subsection.5.14.1}
+\contentsline {section}{\numberline {5.15}src/square.hpp File Reference}{33}{section.5.15}
+\contentsline {subsection}{\numberline {5.15.1}Detailed Description}{33}{subsection.5.15.1}
+\contentsline {chapter}{Index}{34}{section*.27}

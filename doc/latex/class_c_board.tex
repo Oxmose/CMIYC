@@ -1,0 +1,382 @@
+\hypertarget{class_c_board}{\section{C\-Board Class Reference}
+\label{class_c_board}\index{C\-Board@{C\-Board}}
+}
+
+
+The board on which the game is played.  
+
+
+
+
+{\ttfamily \#include $<$board.\-hpp$>$}
+
+
+
+Collaboration diagram for C\-Board\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=174pt]{class_c_board__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_board_a8898bd3c57e6e91db7769a378cb3b755}{C\-Board} ()
+\begin{DoxyCompactList}\small\item\em The default constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_c_board_a2e77f37bac4646bcf1dd6e5f24582392}{C\-Board} (\hyperlink{common_8hpp_af5a69199868671fc85779715443d7e7d}{Coor} dimensions, \hyperlink{common_8hpp_af5a69199868671fc85779715443d7e7d}{Coor} first\-Player, \hyperlink{common_8hpp_af5a69199868671fc85779715443d7e7d}{Coor} second\-Player)
+\begin{DoxyCompactList}\small\item\em The detailed constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_c_board_a28ed0237ed02ccd928a78a7f883eb110}{$\sim$\-C\-Board} ()
+\begin{DoxyCompactList}\small\item\em The destructor. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_board_aba95815fd50be1fe6d6c922e9c49c91c}{Display} (\hyperlink{common_8hpp_a3b27da0d46d4c36bc71511bcea2db296}{Player} current\-Round)
+\begin{DoxyCompactList}\small\item\em Displays the current round of the game. \end{DoxyCompactList}\item 
+bool \hyperlink{class_c_board_a9b825449509fa118303842731dde17ff}{Play\-Round} (\hyperlink{common_8hpp_a3b27da0d46d4c36bc71511bcea2db296}{Player} current\-Round, unsigned Player1\-Win\-Nb, unsigned Player2\-Win\-Nb)
+\begin{DoxyCompactList}\small\item\em Plays a turn of the game. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_c_board_adc99d54f8a5d9ae58ef3d82cd314afb1}{Move} (\hyperlink{common_8hpp_af5a69199868671fc85779715443d7e7d}{Coor} square\-To\-Move, \hyperlink{common_8hpp_afe5d319262bda17c06308828231bd68c}{Direction} direction)
+\begin{DoxyCompactList}\small\item\em Moves a square of the board. \end{DoxyCompactList}\item 
+\hyperlink{common_8hpp_afe5d319262bda17c06308828231bd68c}{Direction} \hyperlink{class_c_board_a1a48e50a148927a5cf49f8261777d5fa}{User\-Input} ()
+\begin{DoxyCompactList}\small\item\em Gets input from the player. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_board_a4095c3a98176578b2e1c478b5391eb1b}{Spawn\-Item} ()
+\begin{DoxyCompactList}\small\item\em Spawns an item in the board. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_board_ab4117c3eab65f2cb45eb1d6ad6c26b21}{Apply\-Power\-Up} (\hyperlink{common_8hpp_a3b27da0d46d4c36bc71511bcea2db296}{Player} player, \hyperlink{common_8hpp_ab119e1d9a1ae19c7528143bf1fe16c3a}{Power\-Up} power\-Up)
+\begin{DoxyCompactList}\small\item\em Apply a power\-Up on a player. \end{DoxyCompactList}\item 
+\hypertarget{class_c_board_a3f41c4ac3c41c93d094c9cf0574e57d9}{void \hyperlink{class_c_board_a3f41c4ac3c41c93d094c9cf0574e57d9}{Change\-Wall} ()}\label{class_c_board_a3f41c4ac3c41c93d094c9cf0574e57d9}
+
+\begin{DoxyCompactList}\small\item\em Delete all wall in the board and generate another board with wall. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_c_board_a1a26c9148c5db7c9770f58c9881d7232}{bool \hyperlink{class_c_board_a1a26c9148c5db7c9770f58c9881d7232}{Are\-Walls\-Broken}}\label{class_c_board_a1a26c9148c5db7c9770f58c9881d7232}
+
+\begin{DoxyCompactList}\small\item\em Contain the information if wall has been broke. \end{DoxyCompactList}\item 
+bool \hyperlink{class_c_board_a1c54c3f6d57fad2c447cbabcb66d2e29}{Player\-Here}
+\begin{DoxyCompactList}\small\item\em Contain the information if the player is in the Square. \end{DoxyCompactList}\item 
+\hypertarget{class_c_board_ad78413ab7d844c5826450f53e38d924a}{std\-::vector$<$ std\-::vector\\*
+$<$ \hyperlink{class_c_square}{C\-Square} $>$ $>$ \hyperlink{class_c_board_ad78413ab7d844c5826450f53e38d924a}{playfield}}\label{class_c_board_ad78413ab7d844c5826450f53e38d924a}
+
+\begin{DoxyCompactList}\small\item\em Square matrix to store the playfield. \end{DoxyCompactList}\item 
+\hypertarget{class_c_board_a6dd7907777f3ea059b353006259ab8ee}{W\-I\-N\-D\-O\-W $\ast$ \hyperlink{class_c_board_a6dd7907777f3ea059b353006259ab8ee}{window}}\label{class_c_board_a6dd7907777f3ea059b353006259ab8ee}
+
+\begin{DoxyCompactList}\small\item\em ncurses window to display the playfield. \end{DoxyCompactList}\item 
+\hypertarget{class_c_board_af3a56318bcaff150a5d966cb49a93dfb}{unsigned \hyperlink{class_c_board_af3a56318bcaff150a5d966cb49a93dfb}{Player1\-Wins}}\label{class_c_board_af3a56318bcaff150a5d966cb49a93dfb}
+
+\begin{DoxyCompactList}\small\item\em Player 1 number of wins. \end{DoxyCompactList}\item 
+\hypertarget{class_c_board_a9c44eb7e2e32c9b10eac874fb3fa1bb3}{unsigned \hyperlink{class_c_board_a9c44eb7e2e32c9b10eac874fb3fa1bb3}{Player2\-Wins}}\label{class_c_board_a9c44eb7e2e32c9b10eac874fb3fa1bb3}
+
+\begin{DoxyCompactList}\small\item\em Player 2 number of wins. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The board on which the game is played. 
+
+One Board object represents one game, it has methods to advance the state of the game or display it. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_board_a8898bd3c57e6e91db7769a378cb3b755}{\index{C\-Board@{C\-Board}!C\-Board@{C\-Board}}
+\index{C\-Board@{C\-Board}!CBoard@{C\-Board}}
+\subsubsection[{C\-Board}]{\setlength{\rightskip}{0pt plus 5cm}C\-Board\-::\-C\-Board (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_board_a8898bd3c57e6e91db7769a378cb3b755}
+
+
+The default constructor. 
+
+It creates a 10x10 board with players in the upper-\/right-\/most and lower-\/left-\/most positions. It's only a delegation from the detailed constructor. \hypertarget{class_c_board_a2e77f37bac4646bcf1dd6e5f24582392}{\index{C\-Board@{C\-Board}!C\-Board@{C\-Board}}
+\index{C\-Board@{C\-Board}!CBoard@{C\-Board}}
+\subsubsection[{C\-Board}]{\setlength{\rightskip}{0pt plus 5cm}C\-Board\-::\-C\-Board (
+\begin{DoxyParamCaption}
+\item[{{\bf Coor}}]{dimensions, }
+\item[{{\bf Coor}}]{first\-Player, }
+\item[{{\bf Coor}}]{second\-Player}
+\end{DoxyParamCaption}
+)}}\label{class_c_board_a2e77f37bac4646bcf1dd6e5f24582392}
+
+
+The detailed constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dimensions} & The dimensions of the desired board. \\
+\hline
+{\em first\-Player} & The starting coordinates of the first player. \\
+\hline
+{\em second\-Player} & The starting coordinates of the second player.\\
+\hline
+\end{DoxyParams}
+It creates a board according to the specified dimensions and will place the players if they are at a valid position. It will also initialize a ncurses window and a border accordingly. 
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_board_a2e77f37bac4646bcf1dd6e5f24582392_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_c_board_a28ed0237ed02ccd928a78a7f883eb110}{\index{C\-Board@{C\-Board}!$\sim$\-C\-Board@{$\sim$\-C\-Board}}
+\index{$\sim$\-C\-Board@{$\sim$\-C\-Board}!CBoard@{C\-Board}}
+\subsubsection[{$\sim$\-C\-Board}]{\setlength{\rightskip}{0pt plus 5cm}C\-Board\-::$\sim$\-C\-Board (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_board_a28ed0237ed02ccd928a78a7f883eb110}
+
+
+The destructor. 
+
+It will get rid of the ncurses window and its border. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_board_ab4117c3eab65f2cb45eb1d6ad6c26b21}{\index{C\-Board@{C\-Board}!Apply\-Power\-Up@{Apply\-Power\-Up}}
+\index{Apply\-Power\-Up@{Apply\-Power\-Up}!CBoard@{C\-Board}}
+\subsubsection[{Apply\-Power\-Up}]{\setlength{\rightskip}{0pt plus 5cm}void C\-Board\-::\-Apply\-Power\-Up (
+\begin{DoxyParamCaption}
+\item[{{\bf Player}}]{player, }
+\item[{{\bf Power\-Up}}]{power\-Up}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_c_board_ab4117c3eab65f2cb45eb1d6ad6c26b21}
+
+
+Apply a power\-Up on a player. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & the player that get the Power up \\
+\hline
+{\em power\-Up} & the powerup the apply \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_board_ab4117c3eab65f2cb45eb1d6ad6c26b21_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_board_ab4117c3eab65f2cb45eb1d6ad6c26b21_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_c_board_aba95815fd50be1fe6d6c922e9c49c91c}{\index{C\-Board@{C\-Board}!Display@{Display}}
+\index{Display@{Display}!CBoard@{C\-Board}}
+\subsubsection[{Display}]{\setlength{\rightskip}{0pt plus 5cm}void C\-Board\-::\-Display (
+\begin{DoxyParamCaption}
+\item[{{\bf Player}}]{current\-Round}
+\end{DoxyParamCaption}
+)}}\label{class_c_board_aba95815fd50be1fe6d6c922e9c49c91c}
+
+
+Displays the current round of the game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current\-Round} & The player that will play the next turn. \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{class_c_board_aba95815fd50be1fe6d6c922e9c49c91c_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_board_aba95815fd50be1fe6d6c922e9c49c91c_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_c_board_adc99d54f8a5d9ae58ef3d82cd314afb1}{\index{C\-Board@{C\-Board}!Move@{Move}}
+\index{Move@{Move}!CBoard@{C\-Board}}
+\subsubsection[{Move}]{\setlength{\rightskip}{0pt plus 5cm}void C\-Board\-::\-Move (
+\begin{DoxyParamCaption}
+\item[{{\bf Coor}}]{square\-To\-Move, }
+\item[{{\bf Direction}}]{direction}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_c_board_adc99d54f8a5d9ae58ef3d82cd314afb1}
+
+
+Moves a square of the board. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em square\-To\-Move} & The coordinates of the Square that will be moved. \\
+\hline
+{\em direction} & The Direction in which the Square will be moved.\\
+\hline
+\end{DoxyParams}
+No check are made in the validity of the input. The Square is swapped with the one in the specified direction, its content is not modified. 
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_board_adc99d54f8a5d9ae58ef3d82cd314afb1_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_c_board_a9b825449509fa118303842731dde17ff}{\index{C\-Board@{C\-Board}!Play\-Round@{Play\-Round}}
+\index{Play\-Round@{Play\-Round}!CBoard@{C\-Board}}
+\subsubsection[{Play\-Round}]{\setlength{\rightskip}{0pt plus 5cm}bool C\-Board\-::\-Play\-Round (
+\begin{DoxyParamCaption}
+\item[{{\bf Player}}]{current\-Round, }
+\item[{unsigned}]{Player1\-Win\-Nb, }
+\item[{unsigned}]{Player2\-Win\-Nb}
+\end{DoxyParamCaption}
+)}}\label{class_c_board_a9b825449509fa118303842731dde17ff}
+
+
+Plays a turn of the game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current\-Round} & The player that will play the turn. If it is no\-\_\-player, the turn is skipped. \\
+\hline
+{\em Player1\-Win\-Nb} & the number of rounds won by player1. \\
+\hline
+{\em Player2\-Win\-Nb} & the number of rounds won by player2. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if a player moves over the other, false otherwise.
+\end{DoxyReturn}
+This procedure will get the input of the player until it is valid and will then move the player square accordingly. 
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_board_a9b825449509fa118303842731dde17ff_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{class_c_board_a9b825449509fa118303842731dde17ff_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_c_board_a4095c3a98176578b2e1c478b5391eb1b}{\index{C\-Board@{C\-Board}!Spawn\-Item@{Spawn\-Item}}
+\index{Spawn\-Item@{Spawn\-Item}!CBoard@{C\-Board}}
+\subsubsection[{Spawn\-Item}]{\setlength{\rightskip}{0pt plus 5cm}void C\-Board\-::\-Spawn\-Item (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_c_board_a4095c3a98176578b2e1c478b5391eb1b}
+
+
+Spawns an item in the board. 
+
+This method will spawn an item in a free Square of the board. The frequency of spawn is variable in the setting. 
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_board_a4095c3a98176578b2e1c478b5391eb1b_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_board_a4095c3a98176578b2e1c478b5391eb1b_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_c_board_a1a48e50a148927a5cf49f8261777d5fa}{\index{C\-Board@{C\-Board}!User\-Input@{User\-Input}}
+\index{User\-Input@{User\-Input}!CBoard@{C\-Board}}
+\subsubsection[{User\-Input}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Direction} C\-Board\-::\-User\-Input (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_c_board_a1a48e50a148927a5cf49f8261777d5fa}
+
+
+Gets input from the player. 
+
+\begin{DoxyReturn}{Returns}
+The direction chosen by the user. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structuser__exit}{user\-\_\-exit}} & if the player presses E\-S\-C, resulting in the program closing successfuly. \\
+\hline
+\end{DoxyExceptions}
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_board_a1a48e50a148927a5cf49f8261777d5fa_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_c_board_a1c54c3f6d57fad2c447cbabcb66d2e29}{\index{C\-Board@{C\-Board}!Player\-Here@{Player\-Here}}
+\index{Player\-Here@{Player\-Here}!CBoard@{C\-Board}}
+\subsubsection[{Player\-Here}]{\setlength{\rightskip}{0pt plus 5cm}bool C\-Board\-::\-Player\-Here\hspace{0.3cm}{\ttfamily [private]}}}\label{class_c_board_a1c54c3f6d57fad2c447cbabcb66d2e29}
+
+
+Contain the information if the player is in the Square. 
+
+Use only for the Double\-Speed effect. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{board_8hpp}{board.\-hpp}\item 
+src/\hyperlink{board_8cpp}{board.\-cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,143 @@
+\hypertarget{class_c_form}{\section{C\-Form Class Reference}
+\label{class_c_form}\index{C\-Form@{C\-Form}}
+}
+
+
+The form used as settings panel.  
+
+
+
+
+{\ttfamily \#include $<$form.\-hpp$>$}
+
+
+
+Collaboration diagram for C\-Form\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=176pt]{class_c_form__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_form_a4437c27a5eeca382ad066037381a1424}{C\-Form} (const std\-::vector$<$ std\-::string $>$ \&K\-Variable\-Names, const std\-::vector$<$ F\-I\-E\-L\-D\-T\-Y\-P\-E $\ast$ $>$ \&K\-Field\-Types, std\-::vector$<$ void $\ast$ $>$ Variables\-Values\-Pt)
+\begin{DoxyCompactList}\small\item\em The constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_c_form_a131fd2633df654300620aafeff3e6f7f}{$\sim$\-C\-Form} ()
+\begin{DoxyCompactList}\small\item\em The destructor. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_form_ae690ac0bad444e2ad18b6b26eb9193a5}{Display} ()
+\begin{DoxyCompactList}\small\item\em Displays the setting form. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_c_form_ac2f5c5169ad400f4f5a32c65aecdd14f}{std\-::vector$<$ void $\ast$ $>$ \hyperlink{class_c_form_ac2f5c5169ad400f4f5a32c65aecdd14f}{variables}}\label{class_c_form_ac2f5c5169ad400f4f5a32c65aecdd14f}
+
+\begin{DoxyCompactList}\small\item\em contain the values of the variables that appear in the fields \end{DoxyCompactList}\item 
+\hypertarget{class_c_form_a075f201739b27a33099ac1a3fe415d87}{std\-::vector$<$ std\-::string $>$ \hyperlink{class_c_form_a075f201739b27a33099ac1a3fe415d87}{Var\-Names\-Vector}}\label{class_c_form_a075f201739b27a33099ac1a3fe415d87}
+
+\begin{DoxyCompactList}\small\item\em contain the names of the variables that appear in the fields \end{DoxyCompactList}\item 
+\hypertarget{class_c_form_a265a3dc8e13610c920f41f8ac755da0f}{std\-::vector$<$ F\-I\-E\-L\-D\-T\-Y\-P\-E $\ast$ $>$ \hyperlink{class_c_form_a265a3dc8e13610c920f41f8ac755da0f}{Right\-Field\-Types}}\label{class_c_form_a265a3dc8e13610c920f41f8ac755da0f}
+
+\begin{DoxyCompactList}\small\item\em contain the types of the variables that appear in the fields \end{DoxyCompactList}\item 
+\hypertarget{class_c_form_a9d0228604b58ba8ee4d1c2eea87bc2fe}{F\-I\-E\-L\-D $\ast$$\ast$ \hyperlink{class_c_form_a9d0228604b58ba8ee4d1c2eea87bc2fe}{fields}}\label{class_c_form_a9d0228604b58ba8ee4d1c2eea87bc2fe}
+
+\begin{DoxyCompactList}\small\item\em the fields of the form \end{DoxyCompactList}\item 
+\hypertarget{class_c_form_a66298e20d5b612661c822deef78290ad}{unsigned \hyperlink{class_c_form_a66298e20d5b612661c822deef78290ad}{Field\-Count}}\label{class_c_form_a66298e20d5b612661c822deef78290ad}
+
+\begin{DoxyCompactList}\small\item\em the number of fields that appear in the form \end{DoxyCompactList}\item 
+\hypertarget{class_c_form_adf3211c9b2d6cfb98d1d1670127abf8d}{unsigned \hyperlink{class_c_form_adf3211c9b2d6cfb98d1d1670127abf8d}{Current\-Field}}\label{class_c_form_adf3211c9b2d6cfb98d1d1670127abf8d}
+
+\begin{DoxyCompactList}\small\item\em the indice of the current field \end{DoxyCompactList}\item 
+\hypertarget{class_c_form_a47d9255ecad93a3d6e3e9ada49293d33}{F\-O\-R\-M $\ast$ \hyperlink{class_c_form_a47d9255ecad93a3d6e3e9ada49293d33}{settingsform}}\label{class_c_form_a47d9255ecad93a3d6e3e9ada49293d33}
+
+\begin{DoxyCompactList}\small\item\em the form that contains all the fields \end{DoxyCompactList}\item 
+\hypertarget{class_c_form_aa2610e56233b291cca05f56d2d7991ce}{W\-I\-N\-D\-O\-W $\ast$ \hyperlink{class_c_form_aa2610e56233b291cca05f56d2d7991ce}{formwin}}\label{class_c_form_aa2610e56233b291cca05f56d2d7991ce}
+
+\begin{DoxyCompactList}\small\item\em the windows that will contain the form \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The form used as settings panel. 
+
+The fom will generate a setting window that will enable the user to set the option as wanted. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_form_a4437c27a5eeca382ad066037381a1424}{\index{C\-Form@{C\-Form}!C\-Form@{C\-Form}}
+\index{C\-Form@{C\-Form}!CForm@{C\-Form}}
+\subsubsection[{C\-Form}]{\setlength{\rightskip}{0pt plus 5cm}C\-Form\-::\-C\-Form (
+\begin{DoxyParamCaption}
+\item[{const std\-::vector$<$ std\-::string $>$ \&}]{K\-Variable\-Names, }
+\item[{const std\-::vector$<$ F\-I\-E\-L\-D\-T\-Y\-P\-E $\ast$ $>$ \&}]{K\-Field\-Types, }
+\item[{std\-::vector$<$ void $\ast$ $>$}]{Variables\-Values\-Pt}
+\end{DoxyParamCaption}
+)}}\label{class_c_form_a4437c27a5eeca382ad066037381a1424}
+
+
+The constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em K\-Variable\-Names} & The names of the variables that appear in the form. \\
+\hline
+{\em K\-Field\-Types} & The types of the variables that appear in the form. \\
+\hline
+{\em Variables\-Values\-Pt} & The values of the variables that appear in the form.\\
+\hline
+\end{DoxyParams}
+Will create the form windows and generate all the fields according to the variables. we give in first, second and thirs place parameters. \hypertarget{class_c_form_a131fd2633df654300620aafeff3e6f7f}{\index{C\-Form@{C\-Form}!$\sim$\-C\-Form@{$\sim$\-C\-Form}}
+\index{$\sim$\-C\-Form@{$\sim$\-C\-Form}!CForm@{C\-Form}}
+\subsubsection[{$\sim$\-C\-Form}]{\setlength{\rightskip}{0pt plus 5cm}C\-Form\-::$\sim$\-C\-Form (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_form_a131fd2633df654300620aafeff3e6f7f}
+
+
+The destructor. 
+
+Will free the memory the fields used and remove the W\-I\-N\-D\-O\-W. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_form_ae690ac0bad444e2ad18b6b26eb9193a5}{\index{C\-Form@{C\-Form}!Display@{Display}}
+\index{Display@{Display}!CForm@{C\-Form}}
+\subsubsection[{Display}]{\setlength{\rightskip}{0pt plus 5cm}void C\-Form\-::\-Display (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_form_ae690ac0bad444e2ad18b6b26eb9193a5}
+
+
+Displays the setting form. 
+
+The method will diplay the setting form that the user is able to modify and will send the new values to the configuration manager. 
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{class_c_form_ae690ac0bad444e2ad18b6b26eb9193a5_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=240pt]{class_c_form_ae690ac0bad444e2ad18b6b26eb9193a5_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{form_8hpp}{form.\-hpp}\item 
+src/\hyperlink{form_8cpp}{form.\-cpp}\end{DoxyCompactItemize}

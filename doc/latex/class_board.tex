@@ -1,0 +1,189 @@
+\hypertarget{class_board}{\section{Board Class Reference}
+\label{class_board}\index{Board@{Board}}
+}
+
+
+The board on which the game is played.  
+
+
+
+
+{\ttfamily \#include $<$board.\-hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_board_a9ee491d4fea680cf69b033374a9fdfcb}{Board} ()
+\begin{DoxyCompactList}\small\item\em The default constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_board_acb42f748f5e2bb955579c5bc7edab939}{Board} (\hyperlink{common_8hpp_af5a69199868671fc85779715443d7e7d}{Coor} dimensions, \hyperlink{common_8hpp_af5a69199868671fc85779715443d7e7d}{Coor} first\-Player, \hyperlink{common_8hpp_af5a69199868671fc85779715443d7e7d}{Coor} second\-Player)
+\begin{DoxyCompactList}\small\item\em The detailed constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_board_af73f45730119a1fd8f6670f53f959e68}{$\sim$\-Board} ()
+\begin{DoxyCompactList}\small\item\em The destructor. \end{DoxyCompactList}\item 
+void \hyperlink{class_board_af0d3cbab40c45a20d39e27f440edbf96}{display} (\hyperlink{common_8hpp_a64071507b27c62fbdfefd4e0d29e5f81}{Player} current\-Round)
+\begin{DoxyCompactList}\small\item\em Displays the current round of the game. \end{DoxyCompactList}\item 
+bool \hyperlink{class_board_a9d3c9e23911793a5c0ac30a07d602edf}{play\-Round} (\hyperlink{common_8hpp_a64071507b27c62fbdfefd4e0d29e5f81}{Player} current\-Round)
+\begin{DoxyCompactList}\small\item\em Plays a turn of the game. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_board_acdad6d3fae5aa18a823d6618fdebbd16}{move} (\hyperlink{common_8hpp_af5a69199868671fc85779715443d7e7d}{Coor} square\-To\-Move, \hyperlink{common_8hpp_afffcc922842a32b41fc33e317e67c474}{Direction} direction)
+\begin{DoxyCompactList}\small\item\em Moves a square of the board. \end{DoxyCompactList}\item 
+\hyperlink{common_8hpp_afffcc922842a32b41fc33e317e67c474}{Direction} \hyperlink{class_board_aa00d012f8c2abdb3d599ce694df5ba4f}{user\-Input} ()
+\begin{DoxyCompactList}\small\item\em Gets input from the player. \end{DoxyCompactList}\item 
+void \hyperlink{class_board_a4252fbb5f307ae562c76fb1d28636958}{spawn\-Item} ()
+\begin{DoxyCompactList}\small\item\em Spawns an item in the board. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_board_abbfc50e8d22248d90499683266414786}{std\-::vector$<$ std\-::vector\\*
+$<$ \hyperlink{class_square}{Square} $>$ $>$ \hyperlink{class_board_abbfc50e8d22248d90499683266414786}{playfield}}\label{class_board_abbfc50e8d22248d90499683266414786}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_square}{Square} matrix to store the playfield. \end{DoxyCompactList}\item 
+\hypertarget{class_board_a39603507e84a1c2cc03b6d1ac1a530d1}{W\-I\-N\-D\-O\-W $\ast$ \hyperlink{class_board_a39603507e84a1c2cc03b6d1ac1a530d1}{window}}\label{class_board_a39603507e84a1c2cc03b6d1ac1a530d1}
+
+\begin{DoxyCompactList}\small\item\em ncurses window to display the playfield. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The board on which the game is played. 
+
+One \hyperlink{class_board}{Board} object represents one game, it has methods to advance the state of the game or display it. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_board_a9ee491d4fea680cf69b033374a9fdfcb}{\index{Board@{Board}!Board@{Board}}
+\index{Board@{Board}!Board@{Board}}
+\subsubsection[{Board}]{\setlength{\rightskip}{0pt plus 5cm}Board\-::\-Board (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_board_a9ee491d4fea680cf69b033374a9fdfcb}
+
+
+The default constructor. 
+
+It creates a 10x10 board with players in the upper-\/right-\/most and lower-\/left-\/most positions. It's only a delegation from the detailed constructor. \hypertarget{class_board_acb42f748f5e2bb955579c5bc7edab939}{\index{Board@{Board}!Board@{Board}}
+\index{Board@{Board}!Board@{Board}}
+\subsubsection[{Board}]{\setlength{\rightskip}{0pt plus 5cm}Board\-::\-Board (
+\begin{DoxyParamCaption}
+\item[{{\bf Coor}}]{dimensions, }
+\item[{{\bf Coor}}]{first\-Player, }
+\item[{{\bf Coor}}]{second\-Player}
+\end{DoxyParamCaption}
+)}}\label{class_board_acb42f748f5e2bb955579c5bc7edab939}
+
+
+The detailed constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dimensions} & The dimensions of the desired board. \\
+\hline
+{\em first\-Player} & The starting coordinates of the first player. \\
+\hline
+{\em second\-Player} & The starting coordinates of the second player.\\
+\hline
+\end{DoxyParams}
+It creates a board according to the specified dimensions and will place the players if they are at a valid position. It will also initialize a ncurses window and a border accordingly. \hypertarget{class_board_af73f45730119a1fd8f6670f53f959e68}{\index{Board@{Board}!$\sim$\-Board@{$\sim$\-Board}}
+\index{$\sim$\-Board@{$\sim$\-Board}!Board@{Board}}
+\subsubsection[{$\sim$\-Board}]{\setlength{\rightskip}{0pt plus 5cm}Board\-::$\sim$\-Board (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_board_af73f45730119a1fd8f6670f53f959e68}
+
+
+The destructor. 
+
+It will get rid of the ncurses window and its border. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_board_af0d3cbab40c45a20d39e27f440edbf96}{\index{Board@{Board}!display@{display}}
+\index{display@{display}!Board@{Board}}
+\subsubsection[{display}]{\setlength{\rightskip}{0pt plus 5cm}void Board\-::display (
+\begin{DoxyParamCaption}
+\item[{{\bf Player}}]{current\-Round}
+\end{DoxyParamCaption}
+)}}\label{class_board_af0d3cbab40c45a20d39e27f440edbf96}
+
+
+Displays the current round of the game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current\-Round} & The player that will play the next turn. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_board_acdad6d3fae5aa18a823d6618fdebbd16}{\index{Board@{Board}!move@{move}}
+\index{move@{move}!Board@{Board}}
+\subsubsection[{move}]{\setlength{\rightskip}{0pt plus 5cm}void Board\-::move (
+\begin{DoxyParamCaption}
+\item[{{\bf Coor}}]{square\-To\-Move, }
+\item[{{\bf Direction}}]{direction}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_board_acdad6d3fae5aa18a823d6618fdebbd16}
+
+
+Moves a square of the board. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em square\-To\-Move} & The coordinates of the \hyperlink{class_square}{Square} that will be moved. \\
+\hline
+{\em direction} & The Direction in which the \hyperlink{class_square}{Square} will be moved.\\
+\hline
+\end{DoxyParams}
+No check are made in the validity of the input. The \hyperlink{class_square}{Square} is swapped with the one in the specified direction, its content is not modified. \hypertarget{class_board_a9d3c9e23911793a5c0ac30a07d602edf}{\index{Board@{Board}!play\-Round@{play\-Round}}
+\index{play\-Round@{play\-Round}!Board@{Board}}
+\subsubsection[{play\-Round}]{\setlength{\rightskip}{0pt plus 5cm}bool Board\-::play\-Round (
+\begin{DoxyParamCaption}
+\item[{{\bf Player}}]{current\-Round}
+\end{DoxyParamCaption}
+)}}\label{class_board_a9d3c9e23911793a5c0ac30a07d602edf}
+
+
+Plays a turn of the game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current\-Round} & The player that will play the turn. If it is N\-O\-N\-E, the turn is skipped. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if a player moves over the other, false otherwise.
+\end{DoxyReturn}
+This procedure will get the input of the player until it is valid and will then move the player square accordingly. \hypertarget{class_board_a4252fbb5f307ae562c76fb1d28636958}{\index{Board@{Board}!spawn\-Item@{spawn\-Item}}
+\index{spawn\-Item@{spawn\-Item}!Board@{Board}}
+\subsubsection[{spawn\-Item}]{\setlength{\rightskip}{0pt plus 5cm}void Board\-::spawn\-Item (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_board_a4252fbb5f307ae562c76fb1d28636958}
+
+
+Spawns an item in the board. 
+
+This method will spawn an item in a free \hyperlink{class_square}{Square} of the board 1/10 times a player moves. \hypertarget{class_board_aa00d012f8c2abdb3d599ce694df5ba4f}{\index{Board@{Board}!user\-Input@{user\-Input}}
+\index{user\-Input@{user\-Input}!Board@{Board}}
+\subsubsection[{user\-Input}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Direction} Board\-::user\-Input (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_board_aa00d012f8c2abdb3d599ce694df5ba4f}
+
+
+Gets input from the player. 
+
+\begin{DoxyReturn}{Returns}
+The direction chosen by the user. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structuser__exit}{user\-\_\-exit}} & if the player presses E\-S\-C, resulting in the program closing successfuly. \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{board_8hpp}{board.\-hpp}\item 
+src/\hyperlink{board_8cpp}{board.\-cpp}\end{DoxyCompactItemize}

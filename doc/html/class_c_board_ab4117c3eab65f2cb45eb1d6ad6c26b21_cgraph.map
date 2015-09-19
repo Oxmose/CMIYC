@@ -1,0 +1,11 @@
+<map id="CBoard::ApplyPowerUp" name="CBoard::ApplyPowerUp">
+<area shape="rect" id="node2" href="$class_c_board.html#a9b825449509fa118303842731dde17ff" title="Plays a turn of the game. " alt="" coords="220,107,359,133"/>
+<area shape="rect" id="node9" href="$class_c_board.html#a3f41c4ac3c41c93d094c9cf0574e57d9" title="Delete all wall in the board and generate another board with wall. " alt="" coords="217,183,362,209"/>
+<area shape="rect" id="node3" href="$class_c_board.html#aba95815fd50be1fe6d6c922e9c49c91c" title="Displays the current round of the game. " alt="" coords="457,5,575,32"/>
+<area shape="rect" id="node5" href="$class_c_board.html#a1a48e50a148927a5cf49f8261777d5fa" title="Gets input from the player. " alt="" coords="451,56,581,83"/>
+<area shape="rect" id="node6" href="$class_c_board.html#adc99d54f8a5d9ae58ef3d82cd314afb1" title="Moves a square of the board. " alt="" coords="463,107,569,133"/>
+<area shape="rect" id="node7" href="$class_c_board.html#a4095c3a98176578b2e1c478b5391eb1b" title="Spawns an item in the board. " alt="" coords="446,157,586,184"/>
+<area shape="rect" id="node4" href="$confmanager_8cpp.html#a3d49b8db3f20fb5a3dbca93f7a08e59a" title="Read if the background display dots or not. " alt="" coords="685,5,854,32"/>
+<area shape="rect" id="node8" href="$confmanager_8cpp.html#aea31b5d159b5351035176535e4abb7d8" title="Reads the apparition frequency of items. " alt="" coords="670,157,869,184"/>
+<area shape="rect" id="node10" href="$confmanager_8cpp.html#ab932d580893f474c2b6964224a611956" title="Reads the apparition frequency of barriers. " alt="" coords="411,208,621,235"/>
+</map>
